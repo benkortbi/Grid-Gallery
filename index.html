@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        bix-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(54deg, lightblue, darkviolet);
+      }
+      main {
+        width: 95%;
+        margin-inline: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 3px;
+        position: relative;
+      }
+      figure {
+        position: relative;
+      }
+      figure img {
+        object-fit: cover;
+         width: 100%;
+        height: 100%;
+        border-radius: 15px;
+      }
+      .one {
+        grid-area: 3 / 1 / span 4 / 2;
+      }
+      .two {
+        grid-area: 1 / 2 / span 3 / 3;
+      }
+      .th {
+        grid-area:4 / 2 / span 4 / 3 ;
+      }
+      .fr {
+        grid-area: 2 / 3 / span 4 / 4;
+      }
+      .fv {
+        grid-area: 6 / 3 / span 4 / 4;
+      }
+      .sx {
+        grid-area: 1 / 4 / span 4 / 5;
+      }
+      .sv {
+        grid-area: 5 / 4 / span 4 / 5;
+      }
+      .eit {
+        grid-area: 2 / 5 / span 4 / 6;
+      }
+      .nn {
+        grid-area: 6 / 5 / span 4 / 6;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Mi Galería </h1></center>
+    <main>
+        <figure class="one">
+          <img src="./media/img1.png"/>
+        </figure>
+        <figure class="two">
+          <img src="./media/img2.png"/>
+        </figure>
+        <figure class="th">
+          <img src="./media/img3.png"/>
+        </figure>
+        <figure class="fr">
+          <img src="./media/img4.png"/>
+        </figure>
+        <figure class="fv">
+          <img src="./media/img5.png"/>
+        </figure>
+        <figure class="sx">
+          <img src="./media/img6.png"/>
+        </figure>
+        <figure class="sv">
+          <img src="./media/img7.png"/>
+        </figure>
+        <figure class="eit">
+          <img src="./media/img8.png"/>
+        </figure>
+        <figure class="nn">
+          <img src="./media/img9.png"/>
+        </figure>
+    </main>
+  </body>
+</html>
